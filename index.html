@@ -1,0 +1,138 @@
+<!-- Anasol - Nicolas Vallotton - Décembre 2020 -->
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+      <title>Anasol</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="index.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <a class="navbar-brand" href="#">Demande d'analyse de TERRE</a>
+    </nav>
+    <div class="corp">
+    <header>
+      <h2>Bienvenue dans le formulaire de commande d'analyses des sols</h2>
+    </header>
+
+    <form class="form-horizontal">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend>Coordonnées du client</legend>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-6 control-label" for="nom_prenom">Nom, prénom</label>
+      <div class="col-md-6">
+      <input id="nom_prenom" name="nom_prenom" type="text" placeholder="Nom Prénom" class="form-control input-md" required="">
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-6 control-label" for="entreprise">Nom de l'entreprise</label>
+      <div class="col-md-6">
+      <input id="entreprise" name="entreprise" type="text" placeholder="" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-6 control-label" for="adresse">Adresse</label>
+      <div class="col-md-6">
+      <input id="adresse" name="adresse" type="text" placeholder="" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-6 control-label" for="localite">NPA, Localité</label>
+      <div class="col-md-6">
+      <input id="localite" name="localite" type="text" placeholder="" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-6 control-label" for="telephone">Téléphone</label>
+      <div class="col-md-6">
+      <input id="telephone" name="telephone" type="text" placeholder="+41" class="form-control input-md">
+
+      </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-6 control-label" for="mail">E-mail</label>
+      <div class="col-md-6">
+      <input id="mail" name="mail" type="text" placeholder="" class="form-control input-md">
+
+      </div>
+    </div>
+
+    </fieldset>
+    </form>
+
+    <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Type de culture</legend>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+  <label class="col-md-6 control-label" for="radios">Choix d'analyse</label>
+  <div class="col-md-8">
+  <div class="radio">
+    <label for="radios-0">
+      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+      Grandes Cultures &amp; Herbages : pH, MO%, P, K, Mg, Ca (H20; AAE)
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-1">
+      <input type="radio" name="radios" id="radios-1" value="2">
+      Cultures Maraichères - Plein Champ : pH, MO%, P , K, Mg, Ca (H2O, AAE), salinité, NO3 test
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-2">
+      <input type="radio" name="radios" id="radios-2" value="3">
+      Cultures Maraichères - Sous Abri : pH, MO%, P , K, Mg, Ca (H2O, AAE), salinité, NO3 test
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-3">
+      <input type="radio" name="radios" id="radios-3" value="4">
+      Arboriculture : pH, MO%, P , K, Mg, Ca (H2O, AAE), B(AAE), CaCO3
+    </label>
+	</div>
+  <div class="radio">
+    <label for="radios-4">
+      <input type="radio" name="radios" id="radios-4" value="5">
+      Viticulture : pH, MO%, P , K, Mg, Ca (H2O, AAE), B(AAE), CaCO3
+    </label>
+	</div>
+  </div>
+</div>
+
+</fieldset>
+</form>
+    </div>
+  </body>
+</html>
