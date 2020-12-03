@@ -10,7 +10,8 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="style.css">
-      <script src="index.js" charset="utf-8"></script>
+
+
   </head>
 
   <body>
@@ -85,54 +86,223 @@
     </form>
 
     <form class="form-horizontal">
-<fieldset>
+  <fieldset>
 
-<!-- Form Name -->
-<form class="form-horizontal">
-<fieldset>
+  <!-- Form Name -->
+  <form class="form-horizontal">
+  <fieldset>
 
-<!-- Form Name -->
-<legend>Type de culture</legend>
+  <!-- Form Name -->
+  <legend>Type de culture</legend>
 
-<!-- Multiple Radios -->
-<div class="form-group">
-  <label class="col-md-6 control-label" for="radios">Choix d'analyse</label>
-  <div class="col-md-8">
-  <div class="radio">
-    <label for="radios-0">
-      <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
-      Grandes Cultures &amp; Herbages : pH, MO%, P, K, Mg, Ca (H20; AAE)
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-1">
-      <input type="radio" name="radios" id="radios-1" value="2">
-      Cultures Maraichères - Plein Champ : pH, MO%, P , K, Mg, Ca (H2O, AAE), salinité, NO3 test
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-2">
-      <input type="radio" name="radios" id="radios-2" value="3">
-      Cultures Maraichères - Sous Abri : pH, MO%, P , K, Mg, Ca (H2O, AAE), salinité, NO3 test
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-3">
-      <input type="radio" name="radios" id="radios-3" value="4">
-      Arboriculture : pH, MO%, P , K, Mg, Ca (H2O, AAE), B(AAE), CaCO3
-    </label>
-	</div>
-  <div class="radio">
-    <label for="radios-4">
-      <input type="radio" name="radios" id="radios-4" value="5">
-      Viticulture : pH, MO%, P , K, Mg, Ca (H2O, AAE), B(AAE), CaCO3
-    </label>
-	</div>
-  </div>
-</div>
-
-</fieldset>
-</form>
+  <!-- Multiple Radios -->
+  <div class="form-group">
+    <label class="col-md-6 control-label" for="radios">Choix d'analyse</label>
+    <div class="col-md-8">
+    <div class="radio">
+      <label for="radios-0">
+        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+        Grandes Cultures &amp; Herbages : pH, MO%, P, K, Mg, Ca (H20; AAE)
+      </label>
+  	</div>
+    <div class="radio">
+      <label for="radios-1">
+        <input type="radio" name="radios" id="radios-1" value="2">
+        Cultures Maraichères - Plein Champ : pH, MO%, P , K, Mg, Ca (H2O, AAE), salinité, NO3 test
+      </label>
+  	</div>
+    <div class="radio">
+      <label for="radios-2">
+        <input type="radio" name="radios" id="radios-2" value="3">
+        Cultures Maraichères - Sous Abri : pH, MO%, P , K, Mg, Ca (H2O, AAE), salinité, NO3 test
+      </label>
+  	</div>
+    <div class="radio">
+      <label for="radios-3">
+        <input type="radio" name="radios" id="radios-3" value="4">
+        Arboriculture : pH, MO%, P , K, Mg, Ca (H2O, AAE), B(AAE), CaCO3
+      </label>
+  	</div>
+    <div class="radio">
+      <label for="radios-4">
+        <input type="radio" name="radios" id="radios-4" value="5">
+        Viticulture : pH, MO%, P , K, Mg, Ca (H2O, AAE), B(AAE), CaCO3
+      </label>
+  	</div>
     </div>
+  </div>
+  </fieldset>
+  </form>
+<!-- ################################################################# -->
+  <div id="form_sample">
+  <form class="form-horizontal">
+  <fieldset>
+
+  <!-- Form Name -->
+  <legend>Échantillon 1</legend>
+
+  <!-- Parcelle-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="parcelle">Numéro/Nom de la parcelle</label>
+    <div class="col-md-4">
+    <input id="parcelle" name="parcelle" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Commune-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="commune">Numéro de la commune</label>
+    <div class="col-md-4">
+    <input id="commune" name="commune" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- cadastre-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="cadastre">Numéro cadastre</label>
+    <div class="col-md-4">
+    <input id="cadastre" name="cadastre" type="text" placeholder="" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- horizon -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="horizon">Horizon</label>
+    <div class="col-md-4">
+    <div class="checkbox">
+      <label for="horizon-0">
+        <input type="checkbox" name="horizon" id="horizon-0" value="1">
+        Sol
+      </label>
+  	</div>
+    <div class="checkbox">
+      <label for="horizon-1">
+        <input type="checkbox" name="horizon" id="horizon-1" value="2">
+        Sous-Sol
+      </label>
+  	</div>
+    </div>
+  </div>
+
+  <!-- Demande texture -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="texture">Demande de texture</label>
+    <div class="col-md-4">
+      <label class="radio-inline" for="texture-0">
+        <input type="radio" name="texture" id="texture-0" value="1" checked="checked">
+        oui
+      </label>
+      <label class="radio-inline" for="texture-1">
+        <input type="radio" name="texture" id="texture-1" value="2">
+        non
+      </label>
+    </div>
+  </div>
+
+  <!-- Argile -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="argile">Argile (si connu)</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <input id="argile" name="argile" class="form-control" placeholder="pourcentage" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            %
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">&lt; 10%</a></li>
+            <li><a href="#">20%</a></li>
+            <li><a href="#">30%</a></li>
+            <li><a href="#">40%</a></li>
+            <li><a href="#">50%</a></li>
+            <li><a href="#">60%</a></li>
+            <li><a href="#">70%</a></li>
+            <li><a href="#">80%</a></li>
+            <li><a href="#">&gt; 90%</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Silt -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="silt">Silt (si connu)</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <input id="silt" name="silt" class="form-control" placeholder="Pourcentage" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            %
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">&lt; 10%</a></li>
+            <li><a href="#">20%</a></li>
+            <li><a href="#">30%</a></li>
+            <li><a href="#">40%</a></li>
+            <li><a href="#">50%</a></li>
+            <li><a href="#">60%</a></li>
+            <li><a href="#">70%</a></li>
+            <li><a href="#">80%</a></li>
+            <li><a href="#">&gt; 90%</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sable -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="silt">Sable (si connu)</label>
+    <div class="col-md-4">
+      <div class="input-group">
+        <input id="silt" name="silt" class="form-control" placeholder="Pourcentage" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            %
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu pull-right">
+            <li><a href="#">&lt; 10%</a></li>
+            <li><a href="#">20%</a></li>
+            <li><a href="#">30%</a></li>
+            <li><a href="#">40%</a></li>
+            <li><a href="#">50%</a></li>
+            <li><a href="#">60%</a></li>
+            <li><a href="#">70%</a></li>
+            <li><a href="#">80%</a></li>
+            <li><a href="#">&gt; 90%</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </fieldset>
+  </form>
+
+    <!-- ajouter un échantillon -->
+    <button id="more_sample" onclick="newSample()" name="more_sample" class="btn btn-primary">Ajouter un échantillon</button>
+  </div>
+
+  <div id="new_sample">
+    <p></p>
+  </div>
+
   </body>
+
+  <!-- <script>
+  let nSample = 1;
+       let newSample = function(){
+         let ele = document.getElementById("new_sample");
+         let newForm = document.getElementById("form_sample").innerHTML;
+         document.getElementById("more_sample").remove();
+         ele.innerHTML += newForm;
+       }
+  </script> -->
+    <script src="index.js"></script>
 </html>
