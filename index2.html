@@ -1,0 +1,63 @@
+--><html>
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+   <title>ArcGIS API for JavaScript Tutorials: Display a map</title>
+
+   <style>
+     html,
+     body,
+     #viewDiv {
+       padding: 0;
+       margin: 0;
+       height: 100%;
+       width: 100%;
+     }
+   </style>
+
+   <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
+   <script src="https://js.arcgis.com/4.18/"></script>
+
+   <script>
+     require([
+         "esri/Map",
+         "esri/views/MapView",
+         "esri/layers/TileLayer",
+         "esri/layers/FeatureLayer",
+         "esri/tasks/IdentifyTask",
+         "esri/tasks/support/IdentifyParameters"
+         ],
+         function(Map, MapView, TileLayer, FeatureLayer,IdentifyTask, IdentifyParameters) {
+
+           var ortho2019 = new TileLayer({
+             url: "https://ge.ch/sitgags2/rest/services/RASTER/ORTHOPHOTOS_2019/MapServer",
+             id: "ortho2019",
+             visible: true
+           });
+
+           var ge_exploitation = new FeatureLayer({
+             url: "https://hepiageo2.hesge.ch/server/rest/services/p_anasol/ge_unite_exploitation/FeatureServer/0",
+             id: "ge_exploitation",
+             visible: true
+           });
+
+           var map = new Map({});
+           map.add(ortho2019)
+           map.add(ge_exploitation)
+
+
+           var view = new MapView({
+             container: "viewDiv",
+             map: map,
+             center: [2531000,1128000],
+             zoom: 5
+           });
+
+         });
+   </script>
+
+ </head>
+ <body>
+   <div id="viewDiv"></div>
+ </body>
+</html>
